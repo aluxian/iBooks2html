@@ -105,11 +105,6 @@ foreach ($notes as $AssetID => $booknotes) {
     foreach ($booknotes as $note) {
         $TextWithContext = null;
                 
-        // Skip empty notes
-        //if (strlen($note['BroaderText']?$note['BroaderText']:$note['SelectedText'])==0) {
-        //    continue;
-        //}
-        
         $HighlightedText = $note['SelectedText'];
         
         // If iBooks stored the surrounding paragraph of a highlighted text, show it and make the highlighted text show as highlighted.
